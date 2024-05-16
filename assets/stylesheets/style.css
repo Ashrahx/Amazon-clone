@@ -154,13 +154,19 @@ nav {
     color: #0000007b;
     text-decoration: none;
     font-weight: 600;
-    font-size: var;
+    font-size: var(--fs-5);
     cursor: pointer;
+}
+
+.header-slider a i {
+    font-size: var(--fs-5);
+    color: black;
 }
 
 .control-next {
     right: 0;
 }
+
 
 .box-row {
     display: flex;

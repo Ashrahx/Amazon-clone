@@ -1,19 +1,19 @@
-const imgs = document.querySelectorAll('.header-slider ul img');
-const prevBtn = document.querySelector('.control-prev');
-const nextBtn = document.querySelector('.control-next');
+const imgs = document.querySelectorAll(".header-slider ul img");
+const prevBtn = document.querySelector(".control-prev");
+const nextBtn = document.querySelector(".control-next");
 
 let i = 0;
 
 function changeSlide() {
-    for(let j = 0; j < imgs.length; j++){
-        imgs[j].style.display = 'none';
-    }
-  imgs[i].style.display = 'block';
+  for (let j = 0; j < imgs.length; j++) {
+    imgs[j].style.display = "none";
+  }
+  imgs[i].style.display = "block";
 }
 
 changeSlide();
 
-prevBtn.addEventListener('click', (e) => {
+prevBtn.addEventListener("click", (e) => {
   if (i > 0) {
     i--;
   } else {
@@ -22,7 +22,7 @@ prevBtn.addEventListener('click', (e) => {
   changeSlide();
 });
 
-nextBtn.addEventListener('click', (e) => {
+nextBtn.addEventListener("click", (e) => {
   if (i < imgs.length - 1) {
     i++;
   } else {
@@ -30,3 +30,5 @@ nextBtn.addEventListener('click', (e) => {
   }
   changeSlide();
 });
+
+

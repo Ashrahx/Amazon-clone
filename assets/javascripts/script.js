@@ -1,4 +1,4 @@
-const imgs = document.querySelectorAll(".header-slider ul img");
+const imgs = document.querySelectorAll(".header-image");
 const prevBtn = document.querySelector(".control-prev");
 const nextBtn = document.querySelector(".control-next");
 
@@ -30,5 +30,3 @@ nextBtn.addEventListener("click", (e) => {
   }
   changeSlide();
 });
-
-

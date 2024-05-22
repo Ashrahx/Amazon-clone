@@ -129,8 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const productInfo = document.createElement('div');
           productInfo.className = 'product-info';
           const productBadge = document.createElement('p');
-          productBadge.className = 'product-badge';
-          productBadge.textContent = `${product.offer}% off`;
+          productBadge.textContent = `${product.offer} off`;
           
           const productPrice = document.createElement('p');
           productPrice.textContent = `$${product.price}`;

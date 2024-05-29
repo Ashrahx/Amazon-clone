@@ -30,3 +30,14 @@ nextBtn.addEventListener("click", (e) => {
   }
   changeSlide();
 });
+
+function autoChangeImage() {
+  if (i < imgs.length - 1) {
+    i++;
+  } else {
+    i = 0;
+  }
+  changeSlide();
+}
+
+setInterval(autoChangeImage, 10000);

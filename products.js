@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const productInfo = document.createElement('div');
           productInfo.className = 'product-info';
           const productBadge = document.createElement('p');
+          productBadge.className = 'product-badge'
           productBadge.textContent = `${product.offer} off`;
           
           const productPrice = document.createElement('p');
@@ -140,9 +141,17 @@ document.addEventListener('DOMContentLoaded', function() {
             productInfo.appendChild(spanDeal);
         }
         const productName = document.createElement('p');
+          productName.className = 'product-name';
           productName.textContent = `${product.name}`;
           productInfo.appendChild(productPrice);
           productInfo.appendChild(productName);
+
+
+        const addButton = document.createElement('a');
+          addButton.className = 'add-button';
+          addButton.textContent = 'Add cart';
+          productInfo.appendChild(addButton);
+
           
 
           productCard.appendChild(productImage);

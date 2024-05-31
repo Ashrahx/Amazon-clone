@@ -172,11 +172,26 @@ document.addEventListener('DOMContentLoaded', function () {
     if (existingProduct) {
       existingProduct.quantity += 1;
     } else {
-      cart.push({ ...product, quantity: 1 });
+      cart.push({...product, quantity: 1 });
     }
     updateCart();
+    updateTotalProductsDisplay();
   }
 
+  function calculateTotalProducts() {
+    let total = 0;
+    cart.forEach(item => {
+      total += item.quantity;
+    });
+    return total;
+  }
+  
+  function updateTotalProductsDisplay() {
+    const totalProductsElement = document.getElementById('total-products');
+    const totalProducts = calculateTotalProducts();
+    totalProductsElement.textContent = `${totalProducts}`;
+  }
+  
 
   function updateCart() {
     const cartItemsContainer = document.querySelector('.cart-left');
@@ -216,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
       const itemPriceContainer = document.createElement('p');
       const itemPriceStrong = document.createElement('b');
-      itemPriceStrong.textContent = `$${item.price * item.quantity}`;
+      itemPriceStrong.textContent = `$${item.price.toFixed(2) * item.quantity.toFixed(2)}`;
       itemPriceContainer.appendChild(itemPriceStrong);
 
       itemTitleContainer.appendChild(itemTitle);
@@ -225,9 +240,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const itemSeller = document.createElement('p');
       itemSeller.className = 'product-cart-bestseller';
-      const itemSellerName = document.createElement('span');
-      itemSellerName.textContent = '#1 Best seller';
-      itemSeller.appendChild(itemSellerName);
+      itemSeller.innerHTML = `<span>#1 Best seller</span> in Amazon`
       itemInfoContainer.appendChild(itemSeller);
 
       const itemStock = document.createElement('p');

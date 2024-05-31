@@ -27,6 +27,8 @@
     --teal-300: #007185;
     --crimson: #cc0c39;
     --orange: #c45500;
+    --orange-300: #f08804;
+
 
 
 
@@ -48,6 +50,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -153,6 +156,15 @@ nav {
     display: flex;
     align-items: center;
     margin: 0 15px;
+}
+
+#total-products {
+    position: absolute;
+    right: 81.5px;
+    z-index: 1;
+    top: 7px;
+    color: var(--orange-300);
+    font-weight: bold;
 }
 
 .nav-bottom {
@@ -667,6 +679,13 @@ footer hr {
     }
 }
 
+@media only screen and (max-width: 1194px){
+    #total-products {
+        left: 177px;
+        top: 20px;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     nav {
         background: var(--slate-800);
@@ -704,6 +723,10 @@ footer hr {
 
     .nav-cart h4 {
         display: none;
+    }
+
+    #total-products {
+        right: 47px;
     }
 
     .header-slider a {

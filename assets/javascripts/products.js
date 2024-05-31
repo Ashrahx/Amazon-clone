@@ -273,6 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Decrease the amount of product
       const decrementButton = document.createElement('button');
+      decrementButton.className = 'amount-button';
       decrementButton.textContent = '-';
       decrementButton.addEventListener('click', () => {
         if (item.quantity > 1) {
@@ -288,6 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
       // Increases product quantity
       const incrementButton = document.createElement('button');
+      incrementButton.className = 'amount-button';
       incrementButton.textContent = '+';
       incrementButton.addEventListener('click', () => {
         item.quantity += 1;

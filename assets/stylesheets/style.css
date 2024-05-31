@@ -340,6 +340,7 @@ nav {
     border-radius: 5px;
     justify-content: center;
     margin-inline: 20px;
+    cursor: pointer;
 }
 
 .product-info .add-button:hover {
@@ -435,138 +436,38 @@ footer hr {
 
 
 
-/* product page */
+/* Cart modal */
 
-.product-page {
-    background: var(--white);
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
 }
 
-.breadcrum {
-    padding: 10px 20px;
-    font-size: var(--fs-6);
-    color: var(--neutral-300);
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
-.product-display {
-    min-height: 100%;
-    padding: 10px 20px;
-    display: flex;
+.modal-close .close-icon {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--slate-950);
+    transition: 0.2s ease;
 }
 
-.product-display .product-image {
-    display: flex;
-    gap: 10px;
+.modal-close .close-icon:hover {
+    color: var(--slate-500);
 }
-
-.product-display .product-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.product-display .product-icons img {
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.product-details {
-    margin: 0 30px;
-}
-
-.product-display .product-title {
-    font-size: var(--fs-7);
-}
-
-.product-display .brand-store {
-    margin-top: 5px;
-    font-size: var(--fs-2);
-    color: var(--teal-300);
-}
-
-.product-display .product-rate {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.product-display .product-rate div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.product-display .product-rate p {
-    color: var(--teal-300);
-}
-
-.product-display .product-rate p span {
-    color: var(--white);
-    background: var(--orange);
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-size: var(--fs-2);
-}
-
-.product-display .product-rate h5 {
-    font-weight: 400;
-}
-
-.product-display .product-price {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.product-display .product-price div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-}
-
-.product-display .product-price div p {
-    font-size: var(--fs-8);
-    color: var(--crimson);
-    font-weight: 200;
-}
-
-.product-display .product-price div h1 {
-    font-size: var(--fs-2);
-    font-weight: 500;
-}
-
-.product-display .product-price div h1 span {
-    font-size: var(--fs-8);
-    font-weight: 500;
-}
-
-.product-display .product-price div h5 {
-    color: var(--neutral-300);
-    font-weight: 400;
-}
-
-.product-display .product-price h5 span {
-    text-decoration: line-through;
-}
-
-.product-display .product-price p span {
-    color: var(--teal-300);
-}
-
-.product-display .product-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    max-width: 300px;
-    margin: 15px 0;
-}
-
-.product-display .product-description h1 {
-    font-size: var(--fs-9);
-    margin: 15px 0;
-}
-
-
 
 .cart-container {
     display: flex;

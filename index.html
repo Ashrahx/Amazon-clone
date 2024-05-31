@@ -53,10 +53,10 @@
             <h1>& Orders</h1>
         </div>
 
-        <a href="" class="nav-cart">
+        <div class="nav-cart" id="nav-cart">
             <img src="./assets/images/cart_icon.png" width="40px">
             <h4>Cart</h4>
-        </a>
+        </div>
 
     </nav>
 
@@ -71,6 +71,30 @@
             <a href="/">Gift Cards</a>
             <a href="/">Sell</a>
     </div>
+
+    <div id="cart-modal" class="modal">
+
+        <div class="modal-content">
+          <span class="modal-close" id="modal-close"><i class="fa-solid fa-circle-xmark close-icon"></i></span>
+            <div class="cart-container">
+              <div class="cart-left">
+      
+      
+              </div>
+      
+              <div class="cart-right">
+                  <div class="cart-free-delivery">
+                      <p>&#x2705</p>
+                      <p>Your orders qualifies for FREE Shipping. <b>Choose this option at checkout. </b> See details</p>
+                  </div>
+                  <p class="cart-right-subtotal">Subtotal ((number of items) items): <b>(sum of prices)</b></p>
+                  <p class="cart-right-gift"><input type="checkbox" id="">This order contain a gift</p>
+                  <button>Proceed to checkout</button>
+              </div>
+          </div>
+        </div>
+      
+      </div>
 
     <div class="header-slider">
         <a href="#" class="control-prev"><i class="fa-solid fa-angle-left"></i></a>

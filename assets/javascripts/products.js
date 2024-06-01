@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const itemStock = document.createElement('p');
       itemStock.className = 'product-cart-stock';
-      itemStock.textContent= 'In Stock';
+      itemStock.textContent= 'In Stock unlimited';
       itemInfoContainer.appendChild(itemStock);
 
       const itemDelivery = document.createElement('p');

@@ -185,6 +185,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     return total;
   }
+
+  function calculateSubtotal() {
+    let subtotal = 0;
+    cart.forEach(item => {
+      subtotal += parseFloat(item.price) * item.quantity;
+    });
+    return subtotal.toFixed(2);
+
+  }
   
   function updateTotalProductsDisplay() {
     const totalProductsElement = document.getElementById('total-products');
@@ -204,6 +213,9 @@ document.addEventListener('DOMContentLoaded', function () {
     cartItemsContainer.appendChild(cartTitle);
     cartItemsContainer.appendChild(cartLine);
 
+    const displaySubtotal = document.getElementById('subtotal-products');
+    displaySubtotal.textContent = `$${calculateSubtotal()}`;
+
     // Create cart products
 
     cart.forEach(item => {
@@ -215,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
       itemImg.src = item.img;
       itemImg.alt = item.name;
       itemImg.style.width = '180px'
-      itemImg.style.height = 'auto'
+      itemImg.style.height = '200px'
       cartItem.appendChild(itemImg)
 
       const itemInfoContainer = document.createElement('div');
@@ -231,8 +243,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
       const itemPriceContainer = document.createElement('p');
       const itemPriceStrong = document.createElement('b');
-      itemPriceStrong.textContent = `$${item.price.toFixed(2) * item.quantity.toFixed(2)}`;
+      itemPriceStrong.textContent = `$${(parseFloat(item.price) * item.quantity).toFixed(2)}`;
       itemPriceContainer.appendChild(itemPriceStrong);
+
 
       itemTitleContainer.appendChild(itemTitle);
       itemTitleContainer.appendChild(itemPriceContainer);
@@ -345,6 +358,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (productIndex !== -1) {
       cart.splice(productIndex, 1);
       updateCart();
+      updateTotalProductsDisplay();
     }
   }
 

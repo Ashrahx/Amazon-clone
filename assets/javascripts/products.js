@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 1,
       name: "Amazon Basics 5-Blade",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-1.jpg",
       price: 16.79,
       delivery: "May 25",
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 2,
       name: "N-Bone Puppy Teething",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-2.jpg",
       price: 23.15,
       delivery: "May 26",
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 3,
       name: "The Blast from the Past",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-3.jpg",
       price: 15.19,
       delivery: "May 27",
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 4,
       name: "Fisher-Price Baby",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-4.jpg",
       price: 14.39,
       delivery: "May 29",
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 5,
       name: "Pyle Premium Direct Injection",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-5.jpg",
       price: 12.21,
       delivery: "May 28",
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 6,
       name: "ABC Wooden Block Cart",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-6.jpg",
       price: 13.29,
       delivery: "May 30",
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 7,
       name: "Philips Led Flicker Free",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-7.jpg",
       price: 11.19,
       delivery: "August 2",
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 8,
       name: "Caldwell Flash Bang",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-8.jpg",
       price: 23.99,
       delivery: "July 10",
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 9,
       name: "Funko Bittys Pop!: FNAF",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-9.jpg",
       price: 13.52,
       delivery: "June 13",
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 10,
       name: "My First Paint With Water",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-10.jpg",
       price: 16.79,
       delivery: "May 31",
@@ -104,17 +104,117 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       id: 11,
       name: "SAMSUNG Galaxy S23",
-      description: "Descripción del producto 1",
+      description: "FREE Returns &#11191",
       img: "./assets/images/product-11.jpg",
       price: 559.99,
       delivery: "May 31",
       offer: "15%",
       deal: true,
     },
+    {
+      id: 12,
+      name: "Meta Quest 2 — VR",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-12.jpg",
+      price: 150.00,
+      delivery: "Jun 20",
+      offer: "20%",
+      deal: true,
+    },
+    {
+      id: 13,
+      name: "Nintendo Switch™",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-13.jpg",
+      price: 296.65,
+      delivery: "Aug 02",
+      offer: "10%",
+      deal: true,
+    },
+    {
+      id: 14,
+      name: "GeForce RTX 4060",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-14.jpg",
+      price: 559.99,
+      delivery: "Dec 10",
+      offer: "5%",
+      deal: true,
+    },
+    {
+      id: 15,
+      name: "PlayStation 5 Console",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-15.jpg",
+      price: 514.99,
+      delivery: "Jul 12",
+      offer: "8%",
+      deal: true,
+    },
+    {
+      id: 16,
+      name: "Controller Interactive Screen",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-16.jpg",
+      price: 69.99,
+      delivery: "Jun 23",
+      offer: "15%",
+      deal: true,
+    },
+    {
+      id: 17,
+      name: "Valve Steam Deck 1TB ",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-17.jpg",
+      price: 562.99,
+      delivery: "Jun 31",
+      offer: "5%",
+      deal: true,
+    },
+    {
+      id: 18,
+      name: "Rechargeable Tracker",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-18.jpg",
+      price: 189,
+      delivery: "Jun 15",
+      offer: "5%",
+      deal: true,
+    },
+    {
+      id: 19,
+      name: "Mechanical Keyboard",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-19.jpg",
+      price: 29.99,
+      delivery: "Jun 20",
+      offer: "19%",
+      deal: true,
+    },
+    {
+      id: 20,
+      name: "GoPro HERO12 Black",
+      description: "FREE Returns &#11191",
+      img: "./assets/images/product-20.jpg",
+      price: 299.99,
+      delivery: "Jun 31",
+      offer: "25%",
+      deal: true,
+    },
 
   ];
 
   let cart = [];
+
+  function updateCartState() {
+    const emptyCartDiv = document.querySelector('.empty-cart');
+    if (cart.length === 0) {
+      emptyCartDiv.style.display = 'flex'; // Muestra el div si el carrito está vacío
+    } else {
+      emptyCartDiv.style.display = 'none'; // Oculta el div si hay productos en el carrito
+    }
+  }
+
 
   function showProducts() {
     const productsContainer = document.getElementById('products');
@@ -176,6 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     updateCart();
     updateTotalProductsDisplay();
+    updateCartState(); 
   }
 
   function calculateTotalProducts() {
@@ -215,6 +316,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const displaySubtotal = document.getElementById('subtotal-products');
     displaySubtotal.textContent = `$${calculateSubtotal()}`;
+  
 
     // Create cart products
 
@@ -268,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const itemReturns = document.createElement('p');
       itemReturns.className = 'product-cart-returns';
-      itemReturns.innerHTML= 'FREE Returns &#11191';
+      itemReturns.innerHTML= item.description;
       itemInfoContainer.appendChild(itemReturns);
 
       const itemGift = document.createElement('p');
@@ -346,6 +448,9 @@ document.addEventListener('DOMContentLoaded', function () {
       actionButtonShare.textContent = 'Share';
       itemListAction.appendChild(actionButtonShare);
 
+      
+
+
       const cartLineEnd = document.createElement('hr');
       cartItemsContainer.appendChild(cartLineEnd);
 
@@ -359,6 +464,7 @@ document.addEventListener('DOMContentLoaded', function () {
       cart.splice(productIndex, 1);
       updateCart();
       updateTotalProductsDisplay();
+      updateCartState(); 
     }
   }
 
@@ -372,4 +478,5 @@ document.getElementById('modal-close').onclick = function() {
 }
 
   showProducts();
+  updateCartState(); 
 });

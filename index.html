@@ -79,7 +79,12 @@
           <span class="modal-close" id="modal-close"><i class="fa-solid fa-circle-xmark close-icon"></i></span>
             <div class="cart-container">
               <div class="cart-left">
-      
+
+                <div class="empty-cart">
+                    <img src="./assets/images/empty.svg">
+                    <h2>Empty Cart</h2>
+                </div>
+                
       
               </div>
       
@@ -90,8 +95,12 @@
                   </div>
                   <p class="cart-right-subtotal">Subtotal: <b id="subtotal-products"></b></p>
                   <p class="cart-right-gift"><input type="checkbox" id="">This order contain a gift</p>
-                  <button>Proceed to checkout</button>
+                  <div class="processing">
+                    <label for="progress"><input id="progress" type="radio"><span></span></label>
+                </div>
+                  
               </div>
+              
           </div>
         </div>
       

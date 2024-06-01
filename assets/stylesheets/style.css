@@ -74,6 +74,7 @@ nav {
 
 .nav-menu {
     display: none;
+    cursor: pointer;
 }
 
 .nav-country {
@@ -82,6 +83,7 @@ nav {
     margin-left: 15px;
     font-size: var(--fs-1);
     color: var(--neutral-200);
+    cursor: pointer;
 }
 
 .nav-country h1 {
@@ -112,6 +114,7 @@ nav {
 
 .nav-search-categories:hover {
     background: var(--neutral-170);
+    cursor: pointer;
 }
 
 .nav-search-input {
@@ -126,6 +129,7 @@ nav {
     padding: 8px;
     background: var(--amber-200);
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
 .nav-search-icon:hover {
@@ -138,10 +142,12 @@ nav {
     gap: 2px;
     font-weight: 600;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .nav-text {
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .nav-text p {
@@ -156,13 +162,14 @@ nav {
     display: flex;
     align-items: center;
     margin: 0 15px;
+    cursor: pointer;
 }
 
 .total-products {
-    position: absolute;
-    right: 81.5px;
+    position: relative;
     z-index: 1;
-    top: 7px;
+    bottom: 10px;
+    left: 28px;
     color: var(--orange-300);
     font-weight: bold;
 }
@@ -317,7 +324,8 @@ nav {
 }
 
 .product-card img {
-    width: 110px;
+    width: 150px;
+    height: 150px;
     margin: 0 50px;
 }
 
@@ -585,6 +593,17 @@ footer hr {
     margin-top: 10px;
 }
 
+.cart-container .empty-cart {
+    display: none;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-container .empty-cart img {
+    width: 200px;
+}
+
 .cart-container .cart-right {
     background: var(--white);
     padding: 20px;
@@ -685,17 +704,11 @@ footer hr {
     }
 }
 
-/* @media only screen and (max-width: 1194px){
-    #total-products {
-        left: 177px;
-        top: 20px;
-    }
-} */
-
 @media only screen and (max-width: 900px) {
     nav {
         background: var(--slate-800);
     }
+
 
     .nav-country {
         display: none;
@@ -770,6 +783,10 @@ footer hr {
 }
 
 @media only screen and (max-width: 600px) {
+    .cart-container .empty-cart {
+        flex-direction: column;
+    }
+
     .product-cart-list {
         padding: 24px 0;
     }
@@ -806,3 +823,119 @@ footer hr {
         color: var(--neutral-200);
     }
 }
+
+
+.processing {
+    width: 200px;
+    height: 30px;
+  }
+  
+  .processing label {
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .processing label input {
+    display: none;
+  }
+  
+  .processing label span {
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background: var(--yellow-300);
+    border-radius: 8px;
+  }
+
+  .processing label span:hover {
+    background: var(--yellow-400);
+  }
+
+  .processing label input:checked ~ span {
+    background: #87E544;
+    animation: purchaseSuccess 3.1s ease;
+  }
+  
+  .processing label span:after {
+    content: 'Proceed to checkout';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+  }
+  
+  .processing label input:checked ~ span:after {
+    content: 'Completed';
+    animation: purchaseState 3s;
+  }
+  
+  .processing label span:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background: rgba(255,255,255,.2);
+  }
+  
+  .processing label input:checked ~ span:before {
+    animation: purchaseProgress 3s cubic-bezier(.67,.13,.1,.81);
+  }
+  
+  @keyframes purchaseSuccess {
+    0%, 90% {
+      background: var(--yellow-400);
+    }
+  
+    100% {
+      background: #42ba32;
+    }
+  }
+  
+  @keyframes purchaseState {
+    0%, 95% {
+      content: 'Processing...'
+    }
+  
+    100% {
+      content: 'Thank you for purchasing'
+    }
+  }
+  
+  @keyframes purchaseProgress {
+    0% {
+      width: 5%;
+      opacity: 1;
+    }
+  
+    35% {
+      width: 17%;
+    }
+  
+    64% {
+      width: 51%;
+    }
+  
+    81% {
+      width: 70%;
+    }
+  
+    90% {
+      width: 86%;
+      opacity: 1;
+    }
+  
+    100% {
+      width: 100%;
+      opacity: 0;
+    }
+  }
